@@ -1,0 +1,7 @@
+name,type,status,capacity,fuel_type,year_manufactured,hours_used,current_location,latitude,longitude,rental_rate_per_day,description
+EQX1001 - Excavator,excavator,available,20 ton,diesel,2019,3500,S003,12.9716,77.5946,800,Tracked excavator
+EQX1002 - Crane,crane,in_use,40 ton,diesel,2020,2100,S001,12.9789,77.5912,1200,Mobile crane for lifting
+EQX1003 - Bulldozer,bulldozer,maintenance,200 HP,diesel,2018,5100,S002,12.9601,77.6101,700,Bulldozer under repair
+EQX1004 - Loader,loader,available,3 cu yd,diesel,2021,1500,S004,12.9632,77.6004,600,Front loader
+EQX1005 - Forklift,forklift,available,5 ton,electric,2022,800,S005,12.9655,77.5977,400,Electric forklift
+EQX1006 - Forklift,forklift,available,5 ton,electric,2023,810,S006,12.8655,77.6977,401,Electric forklift

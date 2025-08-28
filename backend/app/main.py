@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
-from app.routers import auth
+from app.routers import auth, equipment, analytics
 
 app = FastAPI(title=settings.PROJECT_NAME, version="1.0.0")
 
@@ -14,9 +14,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Include auth router
+# Include routers
 app.include_router(auth.router, prefix=settings.API_V1_STR)
+app.include_router(equipment.router, prefix=settings.API_V1_STR)
+app.include_router(analytics.router, prefix=settings.API_V1_STR)
 
 @app.get("/")
 async def root():
     return {"message": "Smart Rental Tracker API", "docs": "/docs"}
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy", "message": "Smart Rental Tracker API is running"}
