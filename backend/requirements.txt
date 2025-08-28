@@ -8,3 +8,5 @@ pandas
 scikit-learn
 prophet
 numpy
+python-jose[cryptography]
+pydantic-settings
