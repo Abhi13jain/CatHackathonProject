@@ -2,3 +2,5 @@ streamlit
 httpx
 python-dotenv
 pandas
+streamlit-javascript
+plotly
